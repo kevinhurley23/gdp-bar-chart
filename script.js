@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .attr("data-date", e.target.getAttribute("data-date"));
         })
         .on("mouseout", () => {
-          tooltip.style("opacity", 0);
+          tooltip.style("opacity", 0).style("left", 0).style("top", 0);
         });
     });
 });
